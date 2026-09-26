@@ -1,0 +1,329 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Chapter 1: Integers — Class 7 Maths Companion</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Source+Serif+4:ital,opsz,wght@0,8..60,400;0,8..60,500;0,8..60,600;0,8..60,700;1,8..60,500&family=IBM+Plex+Sans:wght@400;500;600;700&family=IBM+Plex+Mono:wght@500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="topbar">
+    <div class="topbar-inner">
+      <a class="brand-mark" href="index.html">Class 7 Maths <span class="ed">Companion</span></a>
+      <a class="chapter-jump" href="index.html">All chapters</a>
+    </div>
+  </div>
+
+  <div class="page">
+    <div class="chapter-header">
+      <div class="chnum">Chapter 1 &middot; RD Sharma style</div>
+      <h1>Integers</h1>
+      <div class="chapter-toc">
+        <a href="#s0">1.0 Recap</a>
+        <a href="#s1">1.1 Multiplication</a>
+        <a href="#s2">1.2 Properties of multiplication</a>
+        <a href="#s3">1.3 Division</a>
+        <a href="#s4">1.4 Properties of division</a>
+        <a href="#s5">1.5 Order of operations (BODMAS)</a>
+        <a href="#s6">1.6 Removal of brackets</a>
+        <a href="#summary">Summary</a>
+      </div>
+    </div>
+
+    <div class="topic" id="s0">
+      <h2><span class="tnum">1.0</span>Recap: what you already know</h2>
+      <p>Before RD Sharma gets going, it assumes you're solid on these from before &mdash; addition and subtraction of integers. A one-line refresher:</p>
+      <ul class="rule-list">
+        <li>Same sign &rarr; add absolute values, keep the sign. <code>(&minus;4) + (&minus;7) = &minus;11</code></li>
+        <li>Different signs &rarr; subtract absolute values, take the sign of the bigger one. <code>9 + (&minus;13) = &minus;4</code></li>
+        <li>Subtracting b = adding the additive inverse of b. <code>5 &minus; (&minus;3) = 5 + 3 = 8</code></li>
+      </ul>
+      <p style="color:var(--ink-soft); font-size:0.9rem;">If this part still feels shaky, say so and we'll build a full addition/subtraction section before going further &mdash; RD Sharma itself assumes it's already solid.</p>
+    </div>
+
+    <div class="topic" id="s1">
+      <h2><span class="tnum">1.1</span>Multiplication of integers</h2>
+      <div class="definition-box">
+        <div class="dlabel">RULE</div>
+        <p>The product of two integers of <strong>like signs</strong> is equal to the product of their absolute values (a positive result).</p>
+        <p>The product of two integers of <strong>opposite signs</strong> is equal to the additive inverse of the product of their absolute values (a negative result).</p>
+      </div>
+      <div class="example">
+        <div class="example-head">EXAMPLE 1 &mdash; Determine each product</div>
+        <div class="example-body">
+          <div class="q">(i) 12 &times; 7&nbsp;&nbsp;(ii) (&minus;15) &times; 8&nbsp;&nbsp;(iii) (&minus;25) &times; (&minus;9)&nbsp;&nbsp;(iv) 125 &times; (&minus;8)</div>
+          <div class="working">
+            <div>(i) Both positive &rarr; 12 &times; 7 = 84</div>
+            <div>(ii) Opposite signs &rarr; &minus;(15 &times; 8) = &minus;120</div>
+            <div>(iii) Both negative (like signs) &rarr; +(25 &times; 9) = 225</div>
+            <div>(iv) Opposite signs &rarr; &minus;(125 &times; 8) = &minus;1000</div>
+          </div>
+        </div>
+      </div>
+      <div class="example">
+        <div class="example-head">EXAMPLE 2 &mdash; Product of three or more integers</div>
+        <div class="example-body">
+          <div class="q">Find: (i) 3 &times; (&minus;8) &times; 5&nbsp;&nbsp;(ii) 9 &times; (&minus;3) &times; (&minus;6)&nbsp;&nbsp;(iii) (&minus;2) &times; (&minus;4) &times; (&minus;6) &times; (&minus;8)</div>
+          <div class="working">
+            <div>(i) 3 &times; (&minus;8) = &minus;24, then &minus;24 &times; 5 = &minus;120</div>
+            <div>(ii) 9 &times; (&minus;3) = &minus;27, then &minus;27 &times; (&minus;6) = 162</div>
+            <div>(iii) Four negative factors (even count) &rarr; product is positive: 2 &times; 4 &times; 6 &times; 8 = 384</div>
+          </div>
+        </div>
+      </div>
+      <ul class="rule-list">
+        <li>An <strong>even</strong> number of negative factors in a product &rarr; the product is <strong>positive</strong>.</li>
+        <li>An <strong>odd</strong> number of negative factors &rarr; the product is <strong>negative</strong>.</li>
+      </ul>
+      <div id="ex-1-1a"></div>
+      <div class="example">
+        <div class="example-head">EXAMPLE 3 &mdash; using properties to simplify</div>
+        <div class="example-body">
+          <div class="q">Find the value of: 1487 &times; 327 + (&minus;487) &times; 327</div>
+          <div class="working">
+            <div>Both terms share a factor of 327 &mdash; factor it out (distributive property):</div>
+            <div>327 &times; [1487 + (&minus;487)]</div>
+            <div>= 327 &times; 1000</div>
+            <div>= 327000</div>
+          </div>
+        </div>
+      </div>
+      <div id="ex-1-1b"></div>
+    </div>
+
+    <div class="topic" id="s2">
+      <h2><span class="tnum">1.2</span>Properties of multiplication of integers</h2>
+      <ul class="rule-list">
+        <li><strong>Closure property:</strong> for any integers a, b &mdash; a &times; b is always an integer.</li>
+        <li><strong>Commutative property:</strong> a &times; b = b &times; a</li>
+        <li><strong>Associative property:</strong> (a &times; b) &times; c = a &times; (b &times; c)</li>
+        <li><strong>Distributive property (over addition):</strong> a &times; (b + c) = a &times; b + a &times; c</li>
+        <li><strong>Multiplicative identity:</strong> a &times; 1 = a = 1 &times; a</li>
+        <li><strong>Multiplication by zero:</strong> a &times; 0 = 0 = 0 &times; a</li>
+        <li><strong>Multiplication by (&minus;1):</strong> a &times; (&minus;1) = &minus;a = (&minus;1) &times; a &mdash; multiplying by &minus;1 just flips the sign.</li>
+      </ul>
+      <div class="example">
+        <div class="example-head">EXAMPLE 4 &mdash; find the integer</div>
+        <div class="example-body">
+          <div class="q">Determine the integer whose product with (&minus;1) is: (i) 58&nbsp;&nbsp;(ii) 0&nbsp;&nbsp;(iii) &minus;225</div>
+          <div class="working">
+            <div>Multiplying by &minus;1 flips the sign, so work backwards by flipping again.</div>
+            <div>(i) The integer is &minus;58, since (&minus;58) &times; (&minus;1) = 58</div>
+            <div>(ii) The integer is 0, since 0 &times; (&minus;1) = 0</div>
+            <div>(iii) The integer is 225, since 225 &times; (&minus;1) = &minus;225</div>
+          </div>
+        </div>
+      </div>
+      <div id="ex-1-2"></div>
+    </div>
+
+    <div class="topic" id="s3">
+      <h2><span class="tnum">1.3</span>Division of integers</h2>
+      <div class="definition-box">
+        <div class="dlabel">RULE</div>
+        <p>Division undoes multiplication, so the sign rules are identical: like signs give a positive quotient, opposite signs give a negative quotient.</p>
+      </div>
+      <div class="example">
+        <div class="example-head">EXAMPLE 5</div>
+        <div class="example-body">
+          <div class="q">Divide: (i) 102 by 17&nbsp;&nbsp;(ii) &minus;85 by 5&nbsp;&nbsp;(iii) 0 by (&minus;135)</div>
+          <div class="working">
+            <div>(i) 102 &divide; 17 = 6</div>
+            <div>(ii) Opposite signs &rarr; &minus;(85 &divide; 5) = &minus;17</div>
+            <div>(iii) 0 divided by any non-zero integer is always 0.</div>
+          </div>
+        </div>
+      </div>
+      <div id="ex-1-3"></div>
+    </div>
+
+    <div class="topic" id="s4">
+      <h2><span class="tnum">1.4</span>Properties of division of integers</h2>
+      <ul class="rule-list">
+        <li><strong>NOT closed:</strong> a &divide; b is not always an integer, e.g. 1 &divide; 2 = 0.5</li>
+        <li><strong>NOT commutative:</strong> a &divide; b &ne; b &divide; a in general</li>
+        <li><strong>NOT associative:</strong> a &divide; (b &divide; c) &ne; (a &divide; b) &divide; c in general</li>
+        <li><strong>a &divide; 1 = a</strong> for every integer a</li>
+        <li><strong>a &divide; a = 1</strong> for every non-zero integer a</li>
+        <li><strong>a &divide; 0</strong> is never defined; <strong>0 &divide; a = 0</strong> for any non-zero a</li>
+      </ul>
+      <div id="widget-closure"></div>
+      <div id="ex-1-4"></div>
+    </div>
+
+    <div class="topic" id="s5">
+      <h2><span class="tnum">1.5</span>Order of operations &mdash; BODMAS</h2>
+      <p>When an expression has multiple operations with no brackets, RD Sharma uses the BODMAS order strictly: Division and Multiplication (left to right, whichever comes first), then Addition and Subtraction (left to right).</p>
+      <div class="example">
+        <div class="example-head">EXAMPLE 6</div>
+        <div class="example-body">
+          <div class="q">Find the value of: 36 &divide; 6 + 3</div>
+          <div class="working">
+            <div>Division first: 36 &divide; 6 = 6</div>
+            <div>Then addition: 6 + 3 = 9</div>
+          </div>
+        </div>
+      </div>
+      <div class="example">
+        <div class="example-head">EXAMPLE 7</div>
+        <div class="example-body">
+          <div class="q">Find the value of: (&minus;3) &times; (&minus;4) &divide; (&minus;2) + (&minus;1)</div>
+          <div class="working">
+            <div>Division first (left to right): (&minus;4) &divide; (&minus;2) = 2</div>
+            <div>Then multiplication: (&minus;3) &times; 2 = &minus;6</div>
+            <div>Then addition: (&minus;6) + (&minus;1) = &minus;7</div>
+          </div>
+        </div>
+      </div>
+      <div id="ex-1-5"></div>
+    </div>
+
+    <div class="topic" id="s6">
+      <h2><span class="tnum">1.6</span>Simplifying expressions with brackets</h2>
+      <p>RD Sharma introduces one extra symbol here: the <strong>vinculum</strong> &mdash; a bar drawn over a group of numbers, like <code>7&#8254;&minus;5&#8254;</code>. It works exactly like an invisible bracket: whatever is under the bar gets simplified <em>before</em> anything else, even before round brackets.</p>
+      <div class="definition-box">
+        <div class="dlabel">ORDER FOR REMOVING GROUPING SYMBOLS</div>
+        <p>Vinculum &rarr; small brackets ( ) &rarr; curly brackets { } &rarr; square brackets [ ] &mdash; and within each type, always work from the innermost bracket outward.</p>
+      </div>
+      <div id="widget-bracketorder"></div>
+      <div class="example">
+        <div class="example-head">EXAMPLE 8</div>
+        <div class="example-body">
+          <div class="q">Simplify: 3 &minus; (5 &minus; 6 &divide; 3)</div>
+          <div class="working">
+            <div>Inside the bracket, division comes first: 6 &divide; 3 = 2</div>
+            <div>3 &minus; (5 &minus; 2) = 3 &minus; 3</div>
+            <div>= 0</div>
+          </div>
+        </div>
+      </div>
+      <div class="example">
+        <div class="example-head">EXAMPLE 9 &mdash; nested brackets, working outward</div>
+        <div class="example-body">
+          <div class="q">Simplify: 27 &minus; [38 &minus; {46 &minus; (15 &minus; 11)}]</div>
+          <div class="working">
+            <div>Innermost first: (15 &minus; 11) = 4</div>
+            <div>27 &minus; [38 &minus; {46 &minus; 4}]</div>
+            <div>Curly bracket next: {46 &minus; 4} = 42</div>
+            <div>27 &minus; [38 &minus; 42]</div>
+            <div>Square bracket: [38 &minus; 42] = &minus;4</div>
+            <div>27 &minus; (&minus;4) = 27 + 4 = 31</div>
+          </div>
+        </div>
+      </div>
+      <div class="example">
+        <div class="example-head">EXAMPLE 10 &mdash; with division inside nested brackets</div>
+        <div class="example-body">
+          <div class="q">Simplify: 45 &minus; [38 &minus; {60 &divide; 3 &minus; (6 &minus; 9 &divide; 3) &divide; 3}]</div>
+          <div class="working">
+            <div>Innermost bracket: 9 &divide; 3 = 3, so (6 &minus; 3) = 3</div>
+            <div>45 &minus; [38 &minus; {60 &divide; 3 &minus; 3 &divide; 3}]</div>
+            <div>Do the divisions inside the curly bracket: 60 &divide; 3 = 20, and 3 &divide; 3 = 1</div>
+            <div>45 &minus; [38 &minus; {20 &minus; 1}] = 45 &minus; [38 &minus; 19]</div>
+            <div>45 &minus; 19 = 26</div>
+          </div>
+        </div>
+      </div>
+      <div id="widget-bodmas"></div>
+      <div id="ex-1-6"></div>
+    </div>
+
+    <div class="topic" id="summary" style="border-bottom:none;">
+      <div class="chapter-summary">
+        <h3>Chapter 1 summary</h3>
+        <ul>
+          <li>Like signs multiply/divide to a positive result; opposite signs give a negative result.</li>
+          <li>Even count of negative factors &rarr; positive product; odd count &rarr; negative product.</li>
+          <li>Multiplication is closed, commutative, associative, and distributes over addition; 1 is the multiplicative identity.</li>
+          <li>Division is NOT closed, NOT commutative, NOT associative. Division by 0 is never defined.</li>
+          <li>BODMAS with no brackets: division/multiplication (left to right) before addition/subtraction (left to right).</li>
+          <li>With brackets: vinculum first, then ( ), then { }, then [ ] &mdash; innermost first within each.</li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="chapter-nav">
+      <span></span>
+      <span class="end" style="color:var(--ink-soft); font-size:0.85rem;">More chapters coming as you share them.</span>
+    </div>
+  </div>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/react/18.2.0/umd/react.production.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/react-dom/18.2.0/umd/react-dom.production.min.js"></script>
+<script src="widgets.js"></script>
+<script>
+  mount(ClosureDemo, 'widget-closure');
+  mount(BracketOrderDemo, 'widget-bracketorder');
+  mount(BodmasDemo, 'widget-bodmas');
+
+  mount(() => ExerciseSet({
+    label: 'EXERCISE 1.1(a) — Products',
+    items: [
+      { question: 'Find: 14 \u00d7 9', answer: '126', hint: 'Both positive \u2192 positive.' },
+      { question: 'Find: (\u221218) \u00d7 6', answer: '-108', hint: 'Opposite signs \u2192 negative.' },
+      { question: 'Find: (\u221221) \u00d7 (\u221211)', answer: '231', hint: 'Like signs \u2192 positive.' },
+      { question: 'Find: 4 \u00d7 (\u22127) \u00d7 (\u22123)', answer: '84', hint: 'Two negatives (even) \u2192 positive.' },
+      { question: 'Find: (\u22121) \u00d7 (\u22121) \u00d7 (\u22121) \u00d7 (\u22121) \u00d7 (\u22121) (5 factors)', answer: '-1', hint: 'Odd count of negatives \u2192 negative.' }
+    ]
+  }), 'ex-1-1a');
+
+  mount(() => ExerciseSet({
+    label: 'EXERCISE 1.1(b) — Using properties',
+    items: [
+      { question: 'Find the value using distribution: 2394 \u00d7 415 + (\u2212394) \u00d7 415', answer: '830000', hint: 'Factor out 415: 415\u00d7[2394+(\u2212394)] = 415\u00d72000.' },
+      { question: 'Find the integer whose product with (\u22121) is 340.', answer: '-340', hint: 'Flip the sign to reverse a \u00d7(\u22121).' },
+      { question: 'Find the integer whose product with (\u22121) is \u2212512.', answer: '512', hint: 'Flip the sign to reverse a \u00d7(\u22121).' }
+    ]
+  }), 'ex-1-1b');
+
+  mount(() => ExerciseSet({
+    label: 'EXERCISE 1.2 — Properties of multiplication',
+    items: [
+      { question: 'What is the multiplicative identity for integers?', answer: '1', hint: 'a \u00d7 1 = a' },
+      { question: 'What is (\u221217) \u00d7 0?', answer: '0', hint: 'Anything times 0 is 0.' },
+      { question: 'Use a suitable property: (\u221215) \u00d7 (\u221238) + (\u221215) \u00d7 38', answer: '0', hint: 'Factor out \u221215: (\u221215)\u00d7[(\u221238)+38] = (\u221215)\u00d70' }
+    ]
+  }), 'ex-1-2');
+
+  mount(() => ExerciseSet({
+    label: 'EXERCISE 1.3 — Division',
+    items: [
+      { question: 'Divide: 144 by 12', answer: '12', hint: 'Same signs \u2192 positive.' },
+      { question: 'Divide: \u221296 by 8', answer: '-12', hint: 'Opposite signs \u2192 negative.' },
+      { question: 'Divide: 0 by (\u221249)', answer: '0', hint: '0 divided by any non-zero integer is 0.' },
+      { question: 'Divide: \u2212120 by (\u221215)', answer: '8', hint: 'Same signs \u2192 positive.' }
+    ]
+  }), 'ex-1-3');
+
+  mount(() => ExerciseSet({
+    label: 'EXERCISE 1.4 — Properties of division',
+    items: [
+      { question: 'Is a \u00f7 b always an integer for integers a and b? (yes/no)', answer: 'no', hint: 'Try 1 \u00f7 2.' },
+      { question: 'What is (\u221223) \u00f7 (\u221223)?', answer: '1', hint: 'Any non-zero integer divided by itself is 1.' },
+      { question: 'What is (\u22128) \u00f7 1?', answer: '-8', hint: 'Dividing by 1 never changes the number.' }
+    ]
+  }), 'ex-1-4');
+
+  mount(() => ExerciseSet({
+    label: 'EXERCISE 1.5 — BODMAS, no brackets',
+    items: [
+      { question: 'Find the value: 48 \u00f7 8 \u2212 2', answer: '4', hint: 'Division first: 48\u00f78=6, then 6\u22122.' },
+      { question: 'Find the value: (\u22125) \u00d7 (\u22126) \u00f7 (\u22123) + 4', answer: '-6', hint: '(\u22126)\u00f7(\u22123)=2 first, then (\u22125)\u00d72=\u221210, then \u221210+4.' },
+      { question: 'Find the value: 10 \u2212 3 \u00d7 (\u22124) \u00f7 2', answer: '16', hint: '(\u22124)\u00f72=\u22122 first, then 3\u00d7(\u22122)=\u22126, then 10\u2212(\u22126).' }
+    ]
+  }), 'ex-1-5');
+
+  mount(() => ExerciseSet({
+    label: 'EXERCISE 1.6 — Simplify (nested brackets)',
+    items: [
+      { question: 'Simplify: 5 \u2212 (8 \u2212 12 \u00f7 4)', answer: '0', hint: '12\u00f74=3 first, then 8\u22123=5, then 5\u22125.' },
+      { question: 'Simplify: 30 \u2212 [20 \u2212 {12 \u2212 (7 \u2212 4)}]', answer: '19', hint: 'Innermost: 7\u22124=3. Then {12\u22123}=9. Then [20\u22129]=11. Then 30\u221211.' },
+      { question: 'Simplify: 50 \u2212 [30 \u2212 {40 \u00f7 4 \u2212 (5 \u2212 8 \u00f7 4) \u00f7 3}]', answer: '29', hint: '8\u00f74=2 first, so (5\u22122)=3. Then 3\u00f73=1. Then {10\u22121}=9. Then [30\u22129]=21. Then 50\u221221.' }
+    ]
+  }), 'ex-1-6');
+</script>
+</body>
+</html>
